@@ -46,12 +46,10 @@ app.get('/api/health', async (_req, res) => {
     }
 });
 // Routes
-import layersRouter from './routes/layers.js';
 import datasetsRouter from './routes/datasets.js';
 import authRouter from './routes/auth.js';
 import usersRouter from './routes/users.js';
 import logsRouter from './routes/logs.js';
-app.use('/api/layers', layersRouter);
 app.use('/api/datasets', datasetsRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/users', usersRouter);

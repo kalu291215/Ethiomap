@@ -28,7 +28,7 @@ async function setup() {
     if (fs.existsSync(seedPath)) {
       console.log(`Reading seed data from: ${seedPath}`);
       const seedSql = fs.readFileSync(seedPath, 'utf8');
-      console.log('Inserting seed records (regions, cities, corridors)...');
+      console.log('Inserting seed records...');
       await pool.query(seedSql);
       console.log('Database seeded successfully.');
     } else {

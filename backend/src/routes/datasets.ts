@@ -97,7 +97,7 @@ function detectSRID(geojson: FeatureCollection, metadata?: any): number {
   if (combinedCrs.includes('20136') || combinedCrs.includes('32636') || combinedCrs.includes('36N')) return 32636;
 
   // 3. Projected coordinates without an explicit non-4326 SRID specified.
-  // Standard default projected CRS for Ethiopian spatial datasets (towns, regions, boundaries)
+  // Standard default projected CRS for Ethiopian spatial datasets.
   // is UTM Zone 37N (EPSG:32637 - Central Meridian 39°E).
   if (coord && coord.length >= 2) {
     const [x, y] = coord;

@@ -1,6 +1,6 @@
 # Ethio-Map Backend Database & API Service
 
-This is the backend service for the Ethio-Map GIS platform. It provides a Node.js/Express API connected to a PostgreSQL database with PostGIS enabled, serving administrative boundaries, cities, and transport corridors dynamically as GeoJSON FeatureCollections.
+This is the backend service for the Ethio-Map GIS platform. It provides a Node.js/Express API connected to a PostgreSQL database with PostGIS enabled, storing and serving user-managed GeoJSON datasets dynamically.
 
 ---
 
@@ -95,9 +95,6 @@ The server will start on `http://localhost:4000`.
 
 You can check API connectivity by visiting the health endpoint in your browser or curl:
 - Health status: `GET http://localhost:4000/api/health`
-- Regions layer: `GET http://localhost:4000/api/layers/regions`
-- Cities layer: `GET http://localhost:4000/api/layers/cities`
-- Corridors layer: `GET http://localhost:4000/api/layers/corridors`
 
 ### Production Mode
 Build TypeScript into JavaScript and run:
